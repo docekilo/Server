@@ -1,0 +1,22 @@
+:main
+a_name Modpack Cursed Walking by d0ce3
+a_version v1
+a_author d0ce3_
+a_add_type c_forge
+a_add_version c_forge 1.20.1 https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-47.2.0/forge-1.20.1-47.2.0-installer.jar 17
+
+:button instalar_Cursed Walking
+text Instalar_CursedWalking
+remove_server
+download_version y c_forge 1.20.1
+exec java -jar 1.20.1.jar --installServer
+config server_type forge
+config server_version 1.20.1
+config_save
+say Descargando CursedWalking...
+say Instalando CursedWalking...
+download_file https://mediafilez.forgecdn.net/files/5473/718/Cursed%20Walking%201.20.1%20Version%202.0.1%20Server%20Files.zip CursedWalking.zip
+unzip CursedWalking.zip
+say CursedWalking se ha instalado correctament!!
+exec echo "eula=true" >> eula.txt
+sleep 3
